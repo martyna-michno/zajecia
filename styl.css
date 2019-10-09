@@ -1,4 +1,4 @@
-body {
+body{
 
 background: papayawhip;
 margin: 20px 40px;
@@ -42,5 +42,47 @@ color: grey;
 display: flex;
 justify-content: flex-end;
 
+}
 
+.navigation_list{
+
+display: flex;
+list-style-type: none;
+justify-content: space-between;
+}
+
+.navigation_paragraph{
+flex: 1;
+display: block;
+text-align: center;
+}
+
+header{
+display: flex;
+align-items: baseline;
+grid-area: header;
+}
+
+nav{
+grid-area: nav;
+}
+
+aside{
+grid-area: aside;
+
+}
+
+main{
+
+grid-area: main;
+
+}
+section{
+display:grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-areas: 
+"header header header"
+"nav nav nav"
+"main main aside"
+"main main aside";
 }

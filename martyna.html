@@ -9,13 +9,39 @@
     <link rel="stylesheet" type="text/css" href=styl.css>
     <title>Super news</title>
 </head>
+
 <body>
+<section>
     <header>
-        <h2 class="header__heading">Serwis informacyjny "Super News"</h2><img src="#" alt="logo serwisu">
+            <div><img src="#" alt="logo serwisu"></div>
+        <h2 class="header__heading">Serwis informacyjny "Super News"</h2>
+       
     </header>
+    <nav class="navigation">
+        <ul class="navigation_list">
+            <li><a href="#" class="navigation_link">
+                    <p class="navigation_paragraph">Menu 1</p>
+                </a></li>
+            <li><a href="#" class="navigation_link">
+                    <p class="navigation_paragraph">Menu 2</p>
+                </a></li>
+            <li><a href="#" class="navigation_link">
+                    <p class="navigation_paragraph">Menu 3</p>
+                </a></li>
+            <li><a href="#" class="navigation_link">
+                    <p class="navigation_paragraph">Menu 4</p>
+                </a></li>
+        </ul>
+    </nav>
+    <main>
     <article>
+        <figure class="article__figure">
+            <img src="#" alt="zdjecie" class="article__figure--photo">
+            <figcaption class="article__figure--caption">podpis pod zdjeciem</figcaption>
+        </figure>
         <h1 class="article__heading">Tytul artykulu</h1>
-        <p class="article__paragraph article_paragraph--first"><b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b>
+        <p class="article__paragraph article_paragraph--first"><b>Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.</b>
             Magnam molestias culpa, perspiciatis quasi illo totam facere natus at asperiores ratione deleniti tempora ab
             quia fuga!
             Eligendi quo reprehenderit repellendus perspiciatis.</p>
@@ -23,36 +49,51 @@
             Magnam molestias culpa, perspiciatis quasi illo totam facere natus at asperiores ratione deleniti tempora ab
             quia fuga!
             Eligendi quo reprehenderit repellendus perspiciatis.</p>
-        <figure class="article__figure">
-            <img src="#" alt="zdjecie" class="article__figure--photo">
-        <figcaption class="article__figure--caption">podpis pod zdjeciem</figcaption>
-        </figure>
+
         <div class="article__information">
-     <div>
-        <time datetime="2019-10-08 14:00" class="article__information--data">Oct 08</time>
-        <p class="article__information--author">Autor artykulu</p>
-        </div>
+            <div>
+                <time datetime="2019-10-08 14:00" class="article__information--data">Oct 08</time>
+                <p class="article__information--author">Autor artykulu</p>
+            </div>
         </div>
     </article>
     <form action="#" method="post" class="form">
         <p>
             <label for="name" class="form__label form__label--name">Imie i nazwisko</label>
-                <input type="text" name="name" id="name" required placeholder="Imie i nazwisko" disabled class="form__input form__input--name">
+            <input type="text" name="name" id="name" required placeholder="Imie i nazwisko" disabled
+                class="form__input form__input--name">
         </p>
         <p>
             <label for="email" class="form__label form__label--email">E-mail</label>
-                <input type="email" name="email" id="email" required placeholder="E-mail" class="form__input form__input--email">
+            <input type="email" name="email" id="email" required placeholder="E-mail"
+                class="form__input form__input--email">
         </p>
         <p>
             <label for="comment" class="form__label form__label--comment">Tresc komentarza </label>
-                <textarea name="comment" id="comment" cols="30" rows="10" class="form__input form__input--comment"></textarea>
+            <textarea name="comment" id="comment" cols="30" rows="10"
+                class="form__input form__input--comment"></textarea>
         </p>
         <p>
             <input type="submit" value="zapisz">
         </p>
 
-
     </form>
+    </main>
+    <aside class="aside">
+        <ul class="aside_list">
+            <h3>Related topics:</h3>
+            <li>
+                <p class="aside_list--paragraph">"Another article</p>
+            </li>
+            <li>
+                <p class="aside_list--paragraph">Yet another article</p>
+            </li>
+            <li>
+                <p class="aside_list--paragraph">Expert commentary</p>
+            </li>
+        </ul>
+    </aside>
+    </section>
 </body>
 
 </html>
