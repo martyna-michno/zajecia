@@ -7,10 +7,9 @@ font-size: 14px;
 color: darkolivegreen;
 }
 
-section{
 
-    margin: 0 150px;
-}
+
+  
 h1{
 
     text-transform: uppercase;
@@ -35,7 +34,7 @@ color: grey;
     border: 1px solid black;
     color: black;
     font-size: 80%;
-    background: white;
+    background: peachpuff;;
     text-align: center;
     display: block;
 }
@@ -94,6 +93,7 @@ grid-area: main;
 
 }
 section{
+    margin: 0 150px;
 display:grid;
 grid-template-columns: repeat(3, 1fr);
 grid-template-areas: 
@@ -105,3 +105,4 @@ grid-template-areas:
 .article__figure{
 float: left;
 }
+
