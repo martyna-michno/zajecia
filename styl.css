@@ -76,6 +76,7 @@ main{
 
 grid-area: main;
 
+
 }
 section{
 display:grid;
@@ -83,6 +84,9 @@ grid-template-columns: repeat(3, 1fr);
 grid-template-areas: 
 "header header header"
 "nav nav nav"
-"main main aside"
 "main main aside";
+}
+
+.article__figure{
+float: left;
 }
