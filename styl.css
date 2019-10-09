@@ -1,0 +1,46 @@
+body {
+
+background: papayawhip;
+margin: 20px 40px;
+font-family: Arial;
+font-size: 16px;
+color: darkolivegreen;
+}
+
+h1{
+
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 150%;
+    color: grey;
+}
+
+h2{
+text-align: center;
+text-decoration: underline;
+text-transform: capitalize;
+font-size: 125%;
+color: grey;
+}
+
+
+.author,time {
+    width: 100px;
+    border: 1px solid black;
+    color: black;
+    font-size: 80%;
+    background: white;
+    text-align: center;
+
+}
+
+.information {
+
+display: flex;
+justify-content: flex-end;
+
+
+
+}
