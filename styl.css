@@ -49,11 +49,14 @@ justify-content: flex-end;
 display: flex;
 list-style-type: none;
 justify-content: space-between;
+padding: 0;
 }
 
-.navigation_paragraph{
-flex: 1;
-display: block;
+
+.navigation_point{
+background: white;
+padding: 20px;
+flex: 1 1 0;
 text-align: center;
 }
 
