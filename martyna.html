@@ -11,43 +11,41 @@
 </head>
 <body>
     <header>
-        <h2>Serwis informacyjny "Super News"</h2><img src="#" alt="logo serwisu">
+        <h2 class="header__heading">Serwis informacyjny "Super News"</h2><img src="#" alt="logo serwisu">
     </header>
     <article>
-        <h1>Tytul artykulu</h1>
-        <p><b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b>
+        <h1 class="article__heading">Tytul artykulu</h1>
+        <p class="article__paragraph article_paragraph--first"><b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b>
             Magnam molestias culpa, perspiciatis quasi illo totam facere natus at asperiores ratione deleniti tempora ab
             quia fuga!
             Eligendi quo reprehenderit repellendus perspiciatis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <p class="article_paragraph article_paragraph--second">Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Magnam molestias culpa, perspiciatis quasi illo totam facere natus at asperiores ratione deleniti tempora ab
             quia fuga!
             Eligendi quo reprehenderit repellendus perspiciatis.</p>
-        <figure>
-            <img src="#" alt="zdjecie">
-        <figcaption>podpis pod zdjeciem</figcaption>
+        <figure class="article__figure">
+            <img src="#" alt="zdjecie" class="article__figure--photo">
+        <figcaption class="article__figure--caption">podpis pod zdjeciem</figcaption>
         </figure>
-        <div class="information">
+        <div class="article__information">
      <div>
-        <time datetime="2019-10-08 14:00">Oct 08</time>
-        <p class="author">Autor artykulu</p>
+        <time datetime="2019-10-08 14:00" class="article__information--data">Oct 08</time>
+        <p class="article__information--author">Autor artykulu</p>
         </div>
         </div>
     </article>
-    <form action="#" method="post">
+    <form action="#" method="post" class="form">
         <p>
-            <label>Imie i nazwisko
-                <input type="text" name="name" id="name" required placeholder="Imie i nazwisko" disabled>
-            </label>
+            <label for="name" class="form__label form__label--name">Imie i nazwisko</label>
+                <input type="text" name="name" id="name" required placeholder="Imie i nazwisko" disabled class="form__input form__input--name">
         </p>
         <p>
-            <label>E-mail
-                <input type="email" name="email" id="email" required placeholder="E-mail">
-            </label>
+            <label for="email" class="form__label form__label--email">E-mail</label>
+                <input type="email" name="email" id="email" required placeholder="E-mail" class="form__input form__input--email">
         </p>
         <p>
-            <label for="comment">Tresc komentarza </label>
-                <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+            <label for="comment" class="form__label form__label--comment">Tresc komentarza </label>
+                <textarea name="comment" id="comment" cols="30" rows="10" class="form__input form__input--comment"></textarea>
         </p>
         <p>
             <input type="submit" value="zapisz">

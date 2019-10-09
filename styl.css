@@ -26,21 +26,21 @@ color: grey;
 }
 
 
-.author,time {
+.article__information--data, .article__information--author{
     width: 100px;
     border: 1px solid black;
     color: black;
     font-size: 80%;
     background: white;
     text-align: center;
-
+    display: block;
 }
 
-.information {
+
+.article__information{
 
 display: flex;
 justify-content: flex-end;
-
 
 
 }
