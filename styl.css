@@ -3,10 +3,14 @@ body{
 background: papayawhip;
 margin: 20px 40px;
 font-family: Arial;
-font-size: 16px;
+font-size: 14px;
 color: darkolivegreen;
 }
 
+section{
+
+    margin: 0 150px;
+}
 h1{
 
     text-transform: uppercase;
@@ -44,7 +48,7 @@ justify-content: flex-end;
 
 }
 
-.navigation_list{
+.navigation__list{
 
 display: flex;
 list-style-type: none;
@@ -53,16 +57,24 @@ padding: 0;
 }
 
 
-.navigation_point{
-background: white;
+.navigation__point{
+background: peachpuff;
 padding: 20px;
+margin: 5px;
 flex: 1 1 0;
 text-align: center;
+border: solid 1px darkolivegreen;
+}
+
+
+a{
+text-decoration: none;
+color: inherit;
 }
 
 header{
 display: flex;
-align-items: baseline;
+align-items: center;
 grid-area: header;
 }
 
