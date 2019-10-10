@@ -1,0 +1,96 @@
+body{
+
+font-family: arial;
+font-size: 14px;
+}
+
+.wrapper{
+
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+
+
+img{
+height: 260px;
+width: 330px;
+}
+
+.photo, .text{
+
+height: 260px;
+width: 330px;
+
+}
+
+a{
+
+text-decoration: none;
+text-transform: uppercase;
+color: white;
+}
+
+
+.button{
+
+border: solid 1px black;
+display: inline-block;
+padding: 10px;
+border-radius: 10px 10px 10px 10px;
+
+}
+
+.banner{
+
+display: flex; 
+}
+
+/*desktop*/
+
+@media all and (min-width: 601px) {
+
+
+.text{
+
+position: relative;
+margin: 10px;
+}
+
+.button{
+
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background: black;
+}
+
+h1{
+
+    text-align: right;
+    
+    }
+
+}
+/*mobile*/
+@media all and (max-width: 601px) {
+
+
+.banner{
+
+flex-flow: column-reverse;
+text-align: center;
+}
+
+.text{
+
+text-align: center;
+
+}
+
+.button{
+
+background: red;
+
+}
