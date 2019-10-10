@@ -58,7 +58,7 @@ padding: 0;
 .navigation__point{
 background: peachpuff;
 padding: 20px;
-margin: 5px;
+/*margin: 5px; */
 flex: 1 1 0;
 text-align: center;
 border: solid 1px darkolivegreen;
@@ -85,9 +85,9 @@ grid-area: aside;
 
 }
 
-main{
-
-grid-area: main;}
+main{ 
+grid-area: main;
+}
 
 
 /*1000 px a jesli nie to 100%  szerokosci*/
@@ -97,11 +97,12 @@ width: 1000px;
 max-width: 100%;
 margin: 0 auto;
 display: grid;
-grid-template-columns: repeat(3, 1fr);
+grid-template-columns: repeat(4, 1fr);
+grid-gap: 10px;
 grid-template-areas: 
-"header header header"
-"nav nav nav"
-"main main aside";
+"header header header header"
+"nav nav nav nav"
+"main main main aside";
 }
 
 .article__figure{
