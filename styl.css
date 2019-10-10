@@ -1,7 +1,6 @@
 body{
 
 background: papayawhip;
-margin: 20px 40px;
 font-family: Arial;
 font-size: 14px;
 color: darkolivegreen;
@@ -88,13 +87,16 @@ grid-area: aside;
 
 main{
 
-grid-area: main;
+grid-area: main;}
 
 
-}
+/*1000 px a jesli nie to 100%  szerokosci*/
+
 section{
-    margin: 0 150px;
-display:grid;
+width: 1000px;
+max-width: 100%;
+margin: 0 auto;
+display: grid;
 grid-template-columns: repeat(3, 1fr);
 grid-template-areas: 
 "header header header"
