@@ -38,17 +38,31 @@ nav{
 
 @media all and (max-width: 499px) {
 
-.navigation__menu{
 
-flex-flow: column;
-
-
-}
 .showmenu {
     display: block;
     padding: 20px;
     text-align: center;
 }
+
+.navigation__menu{
+
+    display: none;
+    
+    }
+
+nav:hover .navigation__menu{
+
+display: block;
+
+}
+
+/*
+    nav:hover ul{
+
+        display: block;
+    }
+    */
 
 
 }
