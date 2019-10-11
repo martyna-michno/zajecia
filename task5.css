@@ -51,7 +51,7 @@ nav{
     
     }
 
-nav:hover .navigation__menu{
+.showmenu:hover + .navigation__menu{
 
 display: block;
 

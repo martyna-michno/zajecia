@@ -50,7 +50,7 @@ display: flex;
 
 /*desktop*/
 
-@media all and (min-width: 601px) {
+@media all and (min-width: 501px) {
 
 
 .text{
@@ -75,7 +75,7 @@ h1{
 
 }
 /*mobile*/
-@media all and (max-width: 601px) {
+@media all and (max-width: 500px) {
 
 
 .banner{
