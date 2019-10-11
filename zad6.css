@@ -14,9 +14,10 @@ font-size: 14px;
 
 
 img{
-height: 260px;
-width: 330px;
+height: 100%;
+width: 100%;
 }
+
 
 .photo, .text{
 
@@ -80,7 +81,7 @@ h1{
 .banner{
 
 flex-flow: column-reverse;
-text-align: center;
+align-items: center;
 }
 
 .text{
