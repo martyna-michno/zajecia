@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+margin: 0 auto;
+    font-family: Roboco, Arial;
+}
+
+section{
+
+    max-width: 100%;
+    display: flex;
+    align-items: stretch;
+    margin: 0 auto;
+}
+
+.aside {
+    background: rgb(74, 185, 236);
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background: white;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    flex-flow: column;
+}
+
+.aside__list {
+    list-style-type: none;
+    color: white;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.aside__point {
+
+    line-height: 60px;
+    text-align: justify;
+}
+
+.log-in {
+
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(74, 185, 236);
+    border: 1px solid rgb(74, 185, 236);
+    border-radius: 20px;
+    padding: 10px;
+    background: white;
+    height: 80px;
+    display: block;
+}
+
+.log-in:hover,
+.link-2:hover {
+
+    background: rgb(147, 209, 228);
+}
+
+/* Pisz komentarze! wtedy wiadomo
+do czego jest dana klasa */
+
+.form {
+    display: flex;
+    padding: 30px;
+    text-align: center;
+}
+
+
+
+.link-1,
+.link-2 {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid rgb(74, 185, 236);
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: white;
+    margin: 0px 0px 15px;
+}
+
+.link-1 {
+    background: rgb(74, 185, 236);
+    color: white;
+
+
+}
+
+.link-2 {
+    color: rgb(74, 185, 236);
+}
+
+
+.xxx {
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.xdxdxd {
+    min-width: 400px;
+    min-height: 400px;
+    padding: 20px;
+    margin: 50 0 0 0;
+}
+
+.join {
+
+    text-align: left;
+    margin-left: 59px 0px 15px;
+}
+
+h1 {
+
+    text-align: left;
+    font-size: 30px;
+    margin: 20px 0px 0px
+}
+
+.link_footer, span {
+    color: grey;
+    font-size: 13px;
+    text-decoration: none;
+    padding: 5px 0px;
+    margin: 0px 15px 0px 0px;
+    line-height: 1.3125;
+}
+
+.link_footer:hover {
+    text-decoration: underline;
+}
+
+.links_footer {
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin: 0px 20px 0px 0px;
+
+}
+
+.password_login,
+.name_login {
+
+    width: 100%;
+
+}
+
+input[type=text] {
+
+    background: rgb(216, 237, 243);
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+}
