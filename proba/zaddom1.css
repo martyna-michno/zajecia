@@ -2,18 +2,26 @@
     box-sizing: border-box;
 }
 
-body{
-margin: 0 auto;
-    font-family: Roboco, Arial;
+html,
+body {
+  height: 100%;
 }
 
-section{
+body {
+    margin: 0 auto;
+    font-family: Roboco, Arial;
+
+}
+ /* calosc poza stopka */
+
+section {
 
     max-width: 100%;
     display: flex;
-    align-items: stretch;
     margin: 0 auto;
+    height: 100%
 }
+
 
 .aside {
     background: rgb(74, 185, 236);
@@ -26,10 +34,18 @@ section{
 main {
     background: white;
     flex: 1;
-    display: flex;
     justify-content: center;
     padding: 15px;
-    flex-flow: column;
+    align-items: stretch;
+
+}
+
+.main_part{
+
+max-width: 400px;
+margin: 0 auto;
+
+
 }
 
 .aside__list {
@@ -74,7 +90,6 @@ do czego jest dana klasa */
 }
 
 
-
 .link-1,
 .link-2 {
     display: block;
@@ -86,6 +101,7 @@ do czego jest dana klasa */
     padding-bottom: 10px;
     background: white;
     margin: 0px 0px 15px;
+    text-align: center;
 }
 
 .link-1 {
@@ -100,7 +116,7 @@ do czego jest dana klasa */
 }
 
 
-.xxx {
+/* .xxx {
     width: 400px;
     height: 400px;
     padding: 20px;
@@ -112,7 +128,7 @@ do czego jest dana klasa */
     min-height: 400px;
     padding: 20px;
     margin: 50 0 0 0;
-}
+} */
 
 .join {
 
@@ -127,7 +143,12 @@ h1 {
     margin: 20px 0px 0px
 }
 
-.link_footer, span {
+
+/* do nawigacji na dole strony */
+
+
+.link_footer,
+span {
     color: grey;
     font-size: 13px;
     text-decoration: none;
@@ -141,13 +162,18 @@ h1 {
 }
 
 .links_footer {
+    position: fixed;
+    bottom: 0;
     text-align: center;
     padding: 10px 15px;
+    background: white;
 }
 
+/* formularz*/
+
 .login-container {
-    display: flex;
-    flex-direction: column;
+
+    
     height: 100%;
     width: 100%;
     margin: 0px 20px 0px 0px;
