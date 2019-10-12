@@ -31,7 +31,7 @@ section {
     align-items: center;
 }
 
-main {
+main{
     background: white;
     flex: 1;
     justify-content: center;
@@ -69,9 +69,7 @@ margin: 0 auto;
     border: 1px solid rgb(74, 185, 236);
     border-radius: 20px;
     padding: 10px;
-    background: white;
-    height: 80px;
-    display: block;
+    background: white; 
 }
 
 .log-in:hover,
@@ -85,9 +83,8 @@ do czego jest dana klasa */
 
 .form {
     display: flex;
-    padding: 30px;
     text-align: center;
-}
+} 
 
 
 .link-1,
@@ -133,7 +130,7 @@ do czego jest dana klasa */
 .join {
 
     text-align: left;
-    margin-left: 59px 0px 15px;
+    margin: 59px 0px 15px;
 }
 
 h1 {
@@ -171,21 +168,20 @@ span {
 
 /* formularz*/
 
-.login-container {
+/* .login-container {
 
-    
+
     height: 100%;
     width: 100%;
-    margin: 0px 20px 0px 0px;
 
-}
+} 
 
 .password_login,
 .name_login {
 
     width: 100%;
 
-}
+}*/
 
 input[type=text] {
 
