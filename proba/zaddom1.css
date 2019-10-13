@@ -50,6 +50,8 @@ justify-content: center;
 
 }
 
+/* sekcja lewa */
+
 .aside__list {
     list-style-type: none;
     color: white;
@@ -61,6 +63,7 @@ justify-content: center;
 
     line-height: 60px;
     text-align: justify;
+    font-size: 19px;
 }
 
 .log-in {
@@ -83,10 +86,6 @@ justify-content: center;
 /* Pisz komentarze! wtedy wiadomo
 do czego jest dana klasa */
 
-.form {
-    display: flex;
-    text-align: center;
-} 
 
 
 .link-1,
@@ -169,27 +168,35 @@ span {
     background: white;
 }
 
-/* formularz*/
+/* stylizacja formularza*/
 
-/* .login-container {
-
-
-    height: 100%;
-    width: 100%;
-
-} 
-
-.password_login,
-.name_login {
-
-    width: 100%;
-
-}*/
-
-input[type=text] {
-
-    background: rgb(216, 237, 243);
-    padding: 12px 20px;
-    margin: 8px 0;
-    border: none;
+.input_container{
+display: flex;
+flex-flow: column;
+background:  rgb(216, 237, 243);
+width: 200px;
+margin: 0 15px 0 0;
+border-bottom: 1px solid black;
+padding: 3px 2px 2px;
 }
+
+.input_label{
+background: none;
+text-align: left;
+padding: 5px 10px 0;
+font-size: 13px;
+}
+
+.input{
+background: none;
+background: rgb(216, 237, 243);
+border: none;
+padding: 2px 10px 5px;
+outline: none;
+}
+.form {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+} 
