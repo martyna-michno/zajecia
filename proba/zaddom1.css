@@ -6,7 +6,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Roboco, Arial;
+    font-family: Roboco, Arial, sans-serif;
 }
 
 
@@ -251,7 +251,26 @@ img {
 }
 }
 
-@media all and (min-width: 801px) {
+
+@media all and (min-width: 801px) and (max-width: 999px){
+
+.formularz{
+
+    display: none;
+}
+.links_mobile {
+
+    display: none;
+}
+
+.link-1,
+.link-2 {
+    display: block;
+
+}
+}
+
+@media all and (min-width: 1000px) {
 
     .links_mobile {
 
