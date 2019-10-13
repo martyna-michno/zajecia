@@ -9,7 +9,6 @@ body {
     font-family: Roboco, Arial, sans-serif;
 }
 
-
 section {
 
     display: flex;
@@ -28,6 +27,7 @@ aside {
     justify-content: center;
     align-items: center;
     background: url(tlotlo.png) no-repeat center;
+    background-size: cover;
     
 }
 
@@ -175,6 +175,7 @@ span {
 .links_footer {
     text-align: center;
     padding: 10px 15px;
+    align-items: stretch;
 }
 
 
@@ -221,9 +222,8 @@ img {
 @media all and (max-width: 800px) {
 
     .links_mobile {
-
+order: 2;
         display: inline;
-        order: 2;
         margin: 0 auto;
         padding: 39px 15px 30px;
     }
