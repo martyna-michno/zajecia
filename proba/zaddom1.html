@@ -9,31 +9,36 @@
     <link href="https://fonts.googleapis.com/css?family=Be+Vietnam|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Twitter</title>
 </head>
 
 <body>
     <section>
-        <div class="aside">
+        <aside>
             <ul class="aside__list">
                 <li class="aside__point"><i class="fas fa-search"></i> Obserwuj to, co Cię interesuje.</li>
-                <li class="aside__point"><i class="fas fa-users"></i> Dowiedz się, o czym rozmawiają inni.</li>
-                <li class="aside__point"><i class="far fa-comment"></i> Dołącz do rozmowy</li>
+                <li class="aside__point"><i class="fas fa-users"></i> Dowiedz się, o czym mówią inni.</li>
+                <li class="aside__point"><i class="far fa-comment"></i> Dołącz do rozmowy.</li>
             </ul>
-        </div>
+        </aside>
         <main>
-            <form action="#" method="post" class="form">
+            <form action="#" method="post" class="formularz">
                 <div class="input_container">
                     <label for="name" class="input_label">Numer telefonu, e-mail lu...</label>
                     <input type="text" name="name" id="name" class="input">
                 </div>
+                
                 <div class="input_container">
                     <label for="password" class="input_label">Hasło</label>
                     <input type="text" name="password" id="password" class="input">
                 </div>
                 <a href="#" class="log-in">Zaloguj się</a>
             </form>
+        
             <div class="main_part">
+                    <div class="twitter">
+                            <img src="twitter.png" alt="twitter"> </div>
                 <h1>Zobacz, co dzieje się na świecie w tym momencie.</h1>
                 <p class="join">Dołącz do Twittera.</p>
                 <div class="links">
@@ -42,8 +47,10 @@
                 </div>
             </div>
         </main>
+        <div class="links_mobile">
+                <a href="#" class=" link-1 link-1-mobile">Zarejestruj się</a>
+                <a href="#" class="link-2 link-2-mobile">Zaloguj się</a>
     </section>
-    
     <footer>
         <div class="links_footer">
             <a href="#" class="link_footer">Informacje</a>
@@ -66,5 +73,4 @@
         </div>
     </footer>
 </body>
-
 </html>
