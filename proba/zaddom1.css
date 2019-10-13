@@ -5,6 +5,7 @@
 
 body {
     margin: 0;
+    padding: 0;
     font-family: Roboco, Arial;
 }
 
@@ -14,6 +15,7 @@ section {
     display: flex;
     margin: 0 auto;
     width: 100vw;
+    height: 90vh;
 
 }
 
@@ -26,7 +28,7 @@ aside {
     justify-content: center;
     align-items: center;
     background: url(tlotlo.png) no-repeat center;
-    height: 90vh;
+    
 }
 
 /* sekcja prawa*/
@@ -36,7 +38,7 @@ main {
     flex: 1;
     padding: 15px;
     align-items: center;
-    height: 90vh;
+  
 
 }
 
@@ -60,7 +62,7 @@ main {
 }
 
 footer {
-    height: 10vw;
+    height: 10vh;
 }
 /* stylizacja tresci sekcji lewej */
 
@@ -73,11 +75,26 @@ footer {
 }
 
 
-.aside__point {
+.aside__point, .xx, .yy {
 
-    line-height: 60px;
     text-align: justify;
     font-size: 19px;
+    color: white;
+}
+
+.aside__point{
+    margin: 0 0 40px;
+}
+
+.xx{
+margin: 0px 0px 0px 15px;
+padding: 0;
+}
+
+.yy{
+padding: 0;
+margin: 0;
+
 }
 
 /* stylizacja linków */
