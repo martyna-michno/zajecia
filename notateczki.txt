@@ -1,0 +1,21 @@
+Node.js - srodowisko uruchomieniowe, serwer na ktorym sie pisze w js, node.js mozna napisac serwer w js zamiast np. PHP
+
+
+Konsola jest interpretatorem - silnikiem
+
+Zalaczanie scriptow jak stylow <script></script> -> zawsze
+Albo w head albo na dole przed body w zaleznosci od tego czy ma sie zaladowac na poczatku strony czy na kocnu jak juz drzewo html istnieje - tam gdzie sie ma ladowac
+
+
+W head - najpierw alert, potem strona
+Body - najpierw strona, potem alert
+document. - obiekt, Queryselector - metoda, w nawiasie parametr
+Zwraca pierwszego, chyba ze selectrorall to wszystkie
+
+Moge do konkretnego sie odwolac z All albo div:nth-child
+
+Nie trzeba konczyc LINII srednikami, ale wypada
+
+Var x
+Zdefiniowany x, ale niezdefiniowana wartosc
+

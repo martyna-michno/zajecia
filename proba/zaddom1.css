@@ -14,8 +14,11 @@ section {
     display: flex;
     margin: 0 auto;
     width: 100vw;
-    height: 90vh;
+}
 
+section {
+
+    height: 90vw;
 }
 
 /* sekcja lewa */
@@ -28,7 +31,7 @@ aside {
     align-items: center;
     background: url(tlotlo.png) no-repeat center;
     background-size: cover;
-    
+
 }
 
 /* sekcja prawa*/
@@ -38,7 +41,6 @@ main {
     flex: 1;
     padding: 15px;
     align-items: center;
-  
 
 }
 
@@ -52,8 +54,7 @@ main {
 /*czesc z ptaszkiem, napisami i dwoma linkami*/
 
 .main_part {
-    height: 93%;
-    max-width: 390px;
+    width: 400px;
     margin: 0 auto;
     display: flex;
     flex-flow: column;
@@ -61,9 +62,7 @@ main {
 
 }
 
-footer {
-    height: 10vh;
-}
+
 /* stylizacja tresci sekcji lewej */
 
 .aside__list {
@@ -75,25 +74,27 @@ footer {
 }
 
 
-.aside__point, .xx, .yy {
+.aside__point,
+.xx,
+.yy {
 
     text-align: justify;
     font-size: 19px;
     color: white;
 }
 
-.aside__point{
+.aside__point {
     margin: 0 0 40px;
 }
 
-.xx{
-margin: 0px 0px 0px 15px;
-padding: 0;
+.xx {
+    margin: 0px 0px 0px 15px;
+    padding: 0;
 }
 
-.yy{
-padding: 0;
-margin: 0;
+.yy {
+    padding: 0;
+    margin: 0;
 
 }
 
@@ -148,7 +149,7 @@ margin: 0;
     font-weight: bold;
 }
 
-h1{
+h1 {
 
     text-align: left;
     font-size: 30px;
@@ -221,8 +222,12 @@ img {
 
 @media all and (max-width: 800px) {
 
+     section {
+        height: 100%;
+    }
+
     .links_mobile {
-order: 2;
+        order: 2;
         display: inline;
         margin: 0 auto;
         padding: 39px 15px 30px;
@@ -245,29 +250,52 @@ order: 2;
         order: 1;
     }
 
-.link-1-mobile,
-.link-2-mobile{
-    display: inline;
-}
-}
-
-
-@media all and (min-width: 801px) and (max-width: 999px){
-
-.formularz{
-
-    display: none;
-}
-.links_mobile {
-
-    display: none;
-}
-
-.link-1,
-.link-2 {
-    display: block;
+    .link-1-mobile,
+    .link-2-mobile {
+        display: inline;
+    }
 
 }
+
+
+@media all and (min-width: 801px) and (max-width: 999px) {
+
+    .formularz {
+
+        display: none;
+    }
+
+    .links_mobile {
+
+        display: none;
+    }
+
+    .link-1,
+    .link-2 {
+        display: block;
+
+    }
+
+    main {
+
+        position: relative;
+
+    }
+
+    .main_part {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    section {
+
+        height: 90vh;
+    }
+    
+
 }
 
 @media all and (min-width: 1000px) {
@@ -281,6 +309,24 @@ order: 2;
     .link-2 {
         display: block;
 
+    }
+
+    main {
+
+        position: relative;
+
+    }
+
+    .main_part {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    section {
+
+        height: 90vh;
     }
 
 }
