@@ -37,6 +37,7 @@ var student2_proba = {
 
 }
 
+// object literal
 
 // var studentsList = [];
 
@@ -84,7 +85,7 @@ var student2_proba = {
 
 // studentsList.push(student1, student2, student3, student4, student5);
 
-
+// dodawanie danych do html'a
 
 // var o_count = document.querySelector('#display');
 
@@ -99,36 +100,106 @@ var student2_proba = {
 // o_count.innerHTML = o_html;
 
 
-function student(name, adress, id, profile) {
+//construction function
+
+// function student(name, adress, id, profile) {
+//     this.name = name;
+//     this.adress = adress;
+//     this.studentIdNumber = id;
+//     this.profile = profile;
+//     this.displayFullInfo = function () {
+
+
+//         console.log(`Imię: ${name} Adres: ${adress} NumerId: ${id} Profil: ${profile}`);
+
+//     },
+//     this.ChangeId = function (newId) {
+
+//         this.studentIdNumber = newId.toString();
+
+//     }
+
+// }
+
+
+// var studentsList = [
+
+// new student ('Martyna', 'Gdynia', '3892', "Inżynieria materiałowa"),
+// new student ('Ania', 'Gdańsk', '2342', 'Medycyna'),
+// new student ('Marta', 'Sopot', '9201', 'Kosmetologia')
+
+// ];
+
+// console.log(studentsList);
+// console.log(studentsList[1].displayFullInfo());
+// console.log(studentsList[2].ChangeId(5555));
+
+
+//zmiana funkcji w poprzednim przypadku:
+// this.ChangeId = function (newId) {
+
+//     this.studentIdNumber = newId.toString();
+
+// }
+// byloby problematyczne, bo te nowe obiekty, juz utworzone na podstawie tego wczesniejszego juz sie nie zmienia
+//dopiero te nowe sie zmienia, jak to zmienie, wiec lepiej zrobic z prototype.
+
+
+
+//klasa osoba
+
+function Person (name, adress, id) {
     this.name = name;
     this.adress = adress;
-    this.studentIdNumber = id;
-    this.profile = profile;
-    this.displayFullInfo = function () {
-
-
-        console.log(`Imię: ${name} Adres: ${adress} NumerId: ${id} Profil: ${profile}`);
-
-    },
-    this.ChangeId = function (newId) {
-
-        this.studentIdNumber = newId.toString();
-
-    }
+    this.id = id.toString();
 
 }
 
+Person.prototype.displayFullInfo = function (){
 
-var studentsList = [
+    console.log('Imię: ' + this.name + ' Adres: ' + this.adress + 'Id: ' + this.id);
 
-new student ('Martyna', 'Gdynia', '3892', "Inżynieria materiałowa"),
-new student ('Ania', 'Gdańsk', '2342', 'Medycyna'),
-new student ('Marta', 'Sopot', '9201', 'Kosmetologia')
+}
+
+Person.prototype.ChangeId = function(newId) {
+
+    this.id = newId.toString();
+
+}
+
+//klasa student
+
+function Student(name, adress, id){
+
+Person.call(this, name, adress, id);
+this.role = "student"
+
+}
+
+//klasa nauczyciel
+
+function Teacher(name, adress, id){
+
+Person.call(this, name, adress, id);
+this.role = "teacher"
+
+}
+
+Student.prototype = Object.create(Person.prototype);
+Student.prototype.constructor = Student;
+
+//konstruktorem jest student a nie person!
+
+Teacher.prototype = Object.create(Person.prototype);
+Teacher.prototype.constructor = Teacher;
 
 
-];
+var students = [
+new Student("Kamila", "Gdansk", 2302),
+new Student("Ania", "Gdynia", 3445)
+]
 
-
-console.log(studentsList);
-console.log(studentsList[1].displayFullInfo());
-console.log(studentsList[2].ChangeId(5555));
+var teachers = [
+new Teacher("Andrzej", "Warszawa", 3403),
+new Teacher("Tomek", "Kraków", 6421)
+]
