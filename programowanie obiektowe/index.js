@@ -38,26 +38,18 @@ var student2_proba = {
 }
 
 
+// var studentsList = [];
+
 // var student = {
 //     name: '',
-//     setName: function (name) {
-
-//         this.name = name
-//     },
 //     adress: '',
-//     setAdress: function (adress) {
-
-//         this.adress = adress;
-//     },
 //     studentIdNumber: '',
-//     setId: function (IdNumber) {
-
-//         this.studentIdNumber = IdNumber.toString();
-
-//     },
 //     profile: '',
-//     setProfile: function (profile) {
+//     setData: function (name, adress, IdNumber, profile) {
 
+//         this.name = name;
+//         this.adress = adress;
+//         this.studentIdNumber = IdNumber.toString();
 //         this.profile = profile;
 
 //     },
@@ -76,34 +68,49 @@ var student2_proba = {
 // }
 
 // var student1 = Object.create(student);
-// student1.setName("Jan");
-// student1.setAdress("Gdansk");
-// student1.setId(123);
-// student1.setProfile("Medical student");
+// student1.setData("Marek", "Gdańsk", 2930, "Prawo");
+
+// var student2 = Object.create(student);
+// student2.setData("Ania", "Gdynia", 4590, "Medycyna");
+
+// var student3 = Object.create(student);
+// student3.setData("Joanna", "Warszawa", 3499, "Weterynaria");
+
+// var student4 = Object.create(student);
+// student4.setData("Martyna", "Sopot", 1240, "Filologia polska");
+
+// var student5 = Object.create(student);
+// student5.setData("Michał", "Wrocław", 9732, "Ekonomia");
+
+// studentsList.push(student1, student2, student3, student4, student5);
 
 
-var studentsList = [];
 
-var student = {
-    name: '',
-    adress: '',
-    studentIdNumber: '',
-    profile: '',
-    setData: function (name, adress, IdNumber, profile) {
+// var o_count = document.querySelector('#display');
 
-        this.name = name;
-        this.adress = adress;
-        this.studentIdNumber = IdNumber;
-        this.profile = profile;
+// var o_html = '';
+
+// studentsList.map((element) =>{
+
+// o_html+=`<div><div>${element.name}</div><div>${element.adress}</div> <div>${element.studentIdNumber}</div> <div>${element.profile} </div></div>`;
+
+// });
+
+// o_count.innerHTML = o_html;
+
+
+function student(name, adress, id, profile) {
+    this.name = name;
+    this.adress = adress;
+    this.studentIdNumber = id;
+    this.profile = profile;
+    this.displayFullInfo = function () {
+
+
+        console.log(`Imię: ${name} Adres: ${adress} NumerId: ${id} Profil: ${profile}`);
 
     },
-    displayFullInfo: function () {
-
-
-        console.log(`Imię: ${this.name} Adres: ${this.adress} NumerId: ${this.studentIdNumber} Profil: ${this.profile}`);
-
-    },
-    ChangeId: function (newId) {
+    this.ChangeId = function (newId) {
 
         this.studentIdNumber = newId.toString();
 
@@ -111,16 +118,17 @@ var student = {
 
 }
 
-var student1 = Object.create(student);
-student1.setData("Marek", "Gdańsk", "2930", "Law");
 
-var student2 = Object.create(student);
-student2.setData("Ania", "Gdynia", "4590", "Medicine");
+var studentsList = [
 
-var student3 = Object.create(student);
-student3.setData("Joanna", "Warszawa", "3499", "Businnes");
+new student ('Martyna', 'Gdynia', '3892', "Inżynieria materiałowa"),
+new student ('Ania', 'Gdańsk', '2342', 'Medycyna'),
+new student ('Marta', 'Sopot', '9201', 'Kosmetologia')
 
-var student4 = Object.create(student);
-student4.setData("Martyna", "Sopot", "1240", "Sport");
 
-studentsList.push(student1, student2, student3, student4);
+];
+
+
+console.log(studentsList);
+console.log(studentsList[1].displayFullInfo());
+console.log(studentsList[2].ChangeId(5555));
