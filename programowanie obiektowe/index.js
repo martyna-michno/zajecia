@@ -1,39 +1,37 @@
 console.log('Hello World!')
 
-
-
-
-var Student1 = {
+var student1 = {
     name: "Martyna",
     adress: "Sloneczna 12/4",
-    studentIdNumber: 281038,
+    studentIdNumber: "281038",
     profile: "Material Engineering",
-    DisplayFullInfo: function () {
+    displayFullInfo: function() {
 
-        console.log(this.name, this.adress, this.studentIdNumber, this.profile);
+        // console.log('Imię ' + this.name + 'Adres ' + this.adress + 'Profil ' + this.studentIdNumber + 'Profil ' + this.profile);
+        console.log(`Imię: ${this.name} Adres: ${this.adress}`);
 
     },
-    ChangeId: function (argument) {
+    ChangeId: function(argument) {
 
-        this.studentIdNumber = argument;
+        this.studentIdNumber = argument.toString();
 
     }
 
 }
 
-var Student2 = {
+var student2 = {
     name: "Jagoda",
     adress: "Wielkokacka 13/4",
-    studentIdNumber: 950707,
+    studentIdNumber: "950707",
     profile: "Law",
-    DisplayFullInfo: function () {
+    displayFullInfo: function() {
 
         console.log(this.name, this.adress, this.studentIdNumber, this.profile);
 
     },
-    ChangeId: function (argument) {
+    ChangeId: function(argument) {
 
-        this.studentIdNumber = argument;
+        this.studentIdNumber = argument.toString();
 
     }
 
