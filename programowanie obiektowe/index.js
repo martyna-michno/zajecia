@@ -87,17 +87,17 @@ var student2_proba = {
 
 // dodawanie danych do html'a
 
-// var o_count = document.querySelector('#display');
+var o_count = document.querySelector('#display');
 
-// var o_html = '';
+var o_html = '';
 
-// studentsList.map((element) =>{
+studentsList.map((element) =>{
 
-// o_html+=`<div><div>${element.name}</div><div>${element.adress}</div> <div>${element.studentIdNumber}</div> <div>${element.profile} </div></div>`;
+o_html+=`<div><div>${element.name}</div><div>${element.adress}</div> <div>${element.studentIdNumber}</div> <div>${element.profile} </div></div>`;
 
-// });
+});
 
-// o_count.innerHTML = o_html;
+o_count.innerHTML = o_html;
 
 
 //construction function

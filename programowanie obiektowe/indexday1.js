@@ -45,17 +45,134 @@ class Teacher extends Person {
 
 }
 
-var students = [
+// var students = [
+//     new Student("Kamila", "Gdansk", 2302, 21),
+//     new Student("Ania", "Gdynia", 3445, 22),
+//     new Student("Jagoda", "Sopot", 2125, 23),
+//     new Student("Martyna", "Wejherowo", 9885, 20)
+// ]
+
+
+// var teachers = [
+//     new Teacher("Andrzej", "Warszawa", 3403, 34),
+//     new Teacher("Tomek", "Kraków", 6421, 45),
+//     new Teacher("Michał", "Wrocław", 9821, 29),
+//     new Teacher("Maciek", "Poznań", 4421, 35)
+// ]
+
+
+const StudentsArray = [
     new Student("Kamila", "Gdansk", 2302, 21),
     new Student("Ania", "Gdynia", 3445, 22),
     new Student("Jagoda", "Sopot", 2125, 23),
-    new Student("Martyna", "Wejherowo", 9885, 20)
+    new Student("Martyna", "Wejherowo", 9885, 20),
 ]
 
 
-var teachers = [
+const TeachersArray = [
     new Teacher("Andrzej", "Warszawa", 3403, 34),
     new Teacher("Tomek", "Kraków", 6421, 45),
     new Teacher("Michał", "Wrocław", 9821, 29),
     new Teacher("Maciek", "Poznań", 4421, 35)
 ]
+
+
+
+
+class Render {
+
+    static renderText(arrayType, nameOfDiv) {
+
+        const o_cont = document.querySelector(nameOfDiv);
+        let o_html = '';
+        arrayType.map((element) => {
+            o_html += `<div><div>${element.name}</div><div>${element.adress}</div><div>${element.id}</div><div>${element.age}</div><div>${element.role}</div></div>`;
+        });
+
+        o_cont.innerHTML = o_html;
+    }
+}
+
+Render.renderText(StudentsArray, '#students');
+Render.renderText(TeachersArray, '#teachers');
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let inputName = document.querySelector('#inputName');
+// let inputCity = document.querySelector('#inputCity');
+// let inputId = document.querySelector('#inputId');
+// let inputAge = document.querySelector('#inputAge');
+// let inputRole = document.querySelector('#inputRole');
+// let button = document.querySelector("#addButton");
+
+// let Name = inputName.value;
+// let City = inputCity.value;
+// let Id = inputId.value;
+// let Age = inputAge.value;
+// let Role = inputRole.value;
+
+
+// let studentsContainer = document.querySelector(".students");
+// let teachersContainer = document.querySelector(".teachers");
+
+// button.onclick = function(){
+
+// if(Role === "nauczyciel"){
+
+// const nauczyciel = document.createElement('div');
+// nauczyciel.innerHTML = "blablabalabala"
+// teachersContainer.appendChild(nauczyciel);
+
+
+// }
+
+// if(Role === "student")
+
+// const student = document.createElement('div');
+// student.innerHTML = "blablabalabala"
+// studentsContainer.appendChild(student);
+
+// }
