@@ -45,21 +45,6 @@ class Teacher extends Person {
 
 }
 
-// var students = [
-//     new Student("Kamila", "Gdansk", 2302, 21),
-//     new Student("Ania", "Gdynia", 3445, 22),
-//     new Student("Jagoda", "Sopot", 2125, 23),
-//     new Student("Martyna", "Wejherowo", 9885, 20)
-// ]
-
-
-// var teachers = [
-//     new Teacher("Andrzej", "Warszawa", 3403, 34),
-//     new Teacher("Tomek", "Kraków", 6421, 45),
-//     new Teacher("Michał", "Wrocław", 9821, 29),
-//     new Teacher("Maciek", "Poznań", 4421, 35)
-// ]
-
 
 const StudentsArray = [
     new Student("Kamila", "Gdansk", 2302, 21),
