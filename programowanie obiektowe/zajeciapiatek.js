@@ -45,6 +45,8 @@ class Render {
 
         listToRender.map((currentElement) => {
 
+            // metoda laczenia zmiennych z kawalkami napisow : ``
+            
             element.innerHTML += `<div>Imię: ${currentElement.fullName}   || Numer konta: ${currentElement.accountNumber}</div>`
 
         })
